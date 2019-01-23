@@ -4,7 +4,7 @@
 const enc = new TextEncoder();
 
 // another function to go from string to ByteArray, but we first encode the
-// string as Bae64 - note the use of the atob() function
+// string as base64 - note the use of the atob() function
 function strToBin(str) {
     return Uint8Array.from(atob(str), c => c.charCodeAt(0));
 }
