@@ -14,6 +14,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+
+          <img style={{
+              height: "20vh"
+            }} 
+            src="cyber-security.svg" 
+            alt="" />
           
           <p>
             WebAuthn API Demo
@@ -36,7 +42,7 @@ class App extends Component {
           >
             Validate Creds
           </button>
-          
+
         </header>
       </div>
     );
