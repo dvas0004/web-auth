@@ -47,7 +47,7 @@ const createCreds = async function() {
     }
     ////// END server generated info //////
     
-    // browser receives the publicKey ibject and passes it to WebAuthn "create" API
+    // browser receives the publicKey object and passes it to WebAuthn "create" API
     const res = await navigator.credentials.create({
             publicKey: publicKey
         })
@@ -83,7 +83,7 @@ const validateCreds = async function(){
     };
     ////// END server generated info //////
 
-    // browser receives the publicKey ibject and passes it to WebAuthn "get" API
+    // browser receives the publicKey object and passes it to WebAuthn "get" API
     const res = await navigator.credentials.get({
         publicKey: publicKey
       })
